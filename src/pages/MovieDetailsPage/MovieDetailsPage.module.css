@@ -1,0 +1,32 @@
+.backLink {
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  transition: background-color 150ms ease-in, border-color 150ms ease-in;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.backLink:hover {
+  background-color: #ff4f4f;
+  border-color: #ff4f4f;
+}
+.posterWrapper {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.textWrapper {
+  max-width: 1280px;
+}
+.ganres {
+  display: flex;
+  gap: 10px;
+}
