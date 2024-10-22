@@ -1,0 +1,17 @@
+.field {
+  margin: 10px 10px 40px 10px;
+  padding-left: 10px;
+  width: 250px;
+  height: 25px;
+  border: 1px solid #4b4b4b;
+  border-radius: 5px;
+}
+.btn {
+  height: 30px;
+  transition: background-color 150ms ease-in;
+  border: 1px solid #4b4b4b;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: #b7b9b6;
+}

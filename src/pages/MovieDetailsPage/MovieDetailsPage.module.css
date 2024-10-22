@@ -26,7 +26,30 @@
 .textWrapper {
   max-width: 1280px;
 }
+.movieTitle {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
 .ganres {
   display: flex;
   gap: 10px;
+}
+.linkList {
+  margin-bottom: 40px;
+}
+.link {
+  padding: 5px;
+  border: 1px solid #4b4b4b;
+  display: inline-block;
+  border-radius: 5px;
+  margin: 10px;
+  transition: transform 150ms ease-in;
+}
+.link:hover {
+  transform: scale(1.05);
+  background-color: #b7b9b6;
+}
+.active {
+  background-color: #b7b9b6;
+  text-decoration: underline;
 }

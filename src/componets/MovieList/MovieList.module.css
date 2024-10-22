@@ -1,0 +1,10 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: underline;
+  transition: transform 150ms ease-in;
+}
+.link:hover {
+  transform: translate(20px, -2px);
+}

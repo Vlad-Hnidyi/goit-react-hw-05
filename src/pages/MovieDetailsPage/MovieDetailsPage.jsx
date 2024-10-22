@@ -61,7 +61,18 @@ const MovieDetailsPage = () => {
               />
             </div>
             <div className={css.textWrapper}>
-              <h2>{movieData.original_title}</h2>
+              <h2 className={css.movieTitle}>{movieData.original_title}</h2>
+              {movieData.vote_count !== 0 && (
+                <ul>
+                  <li>
+                    <b>Rating: </b>
+                    {Math.round(movieData.vote_average * 100) / 10} %
+                  </li>
+                  <li>
+                    <b>Votes:</b> {movieData.vote_count}
+                  </li>
+                </ul>
+              )}
               {movieData.overview && (
                 <p>
                   <b>Overview:</b> {movieData.overview}
@@ -77,17 +88,6 @@ const MovieDetailsPage = () => {
                       </li>
                     );
                   })}
-                </ul>
-              )}
-              {movieData.vote_count !== 0 && (
-                <ul>
-                  <li>
-                    <b>Rating: </b>
-                    {Math.round(movieData.vote_average * 10) / 10} / 10
-                  </li>
-                  <li>
-                    <b>Votes:</b> {movieData.vote_count}
-                  </li>
                 </ul>
               )}
             </div>
