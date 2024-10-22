@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
-import MoviesSearchForm from "../../componets/MoviesSearchForm/MoviesSearchForm";
-import { fetchMoviesByQuery } from "../../componets/services/TMDB-API";
-import MovieList from "../../componets/MovieList/MovieList";
+import MoviesSearchForm from "../../components/MoviesSearchForm/MoviesSearchForm";
+import MovieList from "../../components/MovieList/MovieList";
+import { fetchMoviesByQuery } from "../../components/services/TMDB-API";
 
 const MoviesPage = () => {
   const [movies, setMovies] = useState([]);
