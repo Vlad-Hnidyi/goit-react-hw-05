@@ -6,7 +6,7 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
-import { fetchMovieById } from "../../componets/services/TMDB-API";
+import { fetchMovieById } from "../../components/services/TMDB-API";
 import { RiArrowGoBackFill } from "react-icons/ri";
 
 import css from "./MovieDetailsPage.module.css";

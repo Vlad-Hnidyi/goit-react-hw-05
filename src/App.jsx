@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
-import Navigation from "./componets/Navigation/Navigation.jsx";
+import Navigation from "./components/Navigation/Navigation.jsx";
 import css from "./App.module.css";
 
 const HomePage = lazy(() => import("./pages/HomePage/HomePage.jsx"));
@@ -12,9 +12,9 @@ const MovieDetailsPage = lazy(() =>
 const NotFoundPage = lazy(() =>
   import("./pages/NotFoundPage/NotFoundPage.jsx")
 );
-const MovieCast = lazy(() => import("./componets/MovieCast/MovieCast.jsx"));
+const MovieCast = lazy(() => import("./components/MovieCast/MovieCast.jsx"));
 const MovieReviews = lazy(() =>
-  import("./componets/MovieReviews//MovieReviews.jsx")
+  import("./components/MovieReviews//MovieReviews.jsx")
 );
 
 function App() {

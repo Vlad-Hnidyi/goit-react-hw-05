@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { fetchMoviesTrendingToday } from "../../componets/services/TMDB-API";
-import MovieList from "../../componets/MovieList/MovieList";
+import { fetchMoviesTrendingToday } from "../../components/services/TMDB-API";
+import MovieList from "../../components/MovieList/MovieList";
 
 import css from "./HomePage.module.css";
 
